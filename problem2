@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class ProcessAName5026201026{
+
+	public static void main(String[] args){
+		Scanner input = new Scanner(System.in);
+		System.out.println("Masukkan nama!");
+		String nama = input.nextLine();
+		System.out.println("Berapa jumlah karakter nama belakang anda?");
+		int belakang = input.nextInt();
+		int jumlah;
+		jumlah = nama.length();
+		int awal = jumlah-belakang;
+		String sub = nama.substring(awal,jumlah);
+		System.out.print(" "+sub);
+		System.out.print(",");
+		System.out.print(nama.charAt(0));
+		
+	}
+}
